@@ -6,8 +6,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
+const Demo = () => (
+  <div>添加数据</div>
+)
+
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div>
+    <Demo />
+    <div>Hello {props.name}!</div>
+  </div>
 )
 
 Hello.defaultProps = {
